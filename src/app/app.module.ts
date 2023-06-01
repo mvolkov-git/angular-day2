@@ -18,7 +18,7 @@ import { UpperfirstPipe } from './pipes/upperfirst.pipe';
     RedGreenDirective,
     DisappearDirective,
     ExclamationPipe,
-    UpperfirstPipe
+    UpperfirstPipe,
   ],
   imports: [
     BrowserModule,
