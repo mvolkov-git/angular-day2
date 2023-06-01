@@ -1,0 +1,14 @@
+<!-- <div class = "container">
+  <p>{{myContent}}</p>
+</div>
+
+ -->
+
+<div class="container">
+  <ng-content></ng-content>
+  <ng-content select="h1"></ng-content>
+  <hr />
+  <ng-content select="p#first"></ng-content>
+  <hr />
+  <ng-content select="p#other"></ng-content>
+</div>

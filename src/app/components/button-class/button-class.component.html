@@ -1,0 +1,9 @@
+<!-- <button [ngClass]="{big: isBig, small: !isBig}">Test</button> -->
+<br><br>
+<button
+ [style.color]="'blue'"
+ [style.font-size]="getSize()"
+ [class.big] = 'isBig'
+
+>{{isBig}}</button>
+
