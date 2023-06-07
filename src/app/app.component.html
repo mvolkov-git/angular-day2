@@ -1,71 +1,76 @@
-<div class="one">
+<!-- <div class="one">
   <div>
     <div class="two"></div>
   </div>
-</div>
+</div> -->
 
+<h1>Home work 2</h1>
+<div></div>
 <p>{{'michael volkov is working on homework' | upperfirst : true}}</p>
-
-<p>{{'michael' | exclamation : 14 : true}}</p>
-
-<p>{{'gil' | uppercase}}</p>
-<p>{{1 | currency : 'ILS'}}</p>
-<p>{{toDay | date : dateFormat }}</p>
 <p>{{toDay | date : hebDayIOfWeek()}}</p>
-<p>{{5.123456 | number: "3.3-4"}}</p>
-<p>{{people | json}}</p>
-
-<h1 [appRedGreen]="true"> hello world</h1>
-<h2 [appRedGreen]="false"> hello world 2</h2>
-<button [appRedGreen]="true">click</button>
-<button>click</button>
-<button [appDisappear]="2000">disappear</button>
-
-<ul>
-  <li *ngFor="let name of names">{{print(name)}}</li>
-</ul>
-
-<ul>
-  <li *ngFor="let name of names">{{name}}</li>
-</ul>
-
-<ul>
-  <ng-container *ngFor="let person of people; let idx = index">
-    <li *ngIf="(idx + 1) % 2 === 0">
-      <div>
-        {{idx+1}} {{person.name}} is {{person.age}}
-      </div>
-    </li>
-  </ng-container>
-</ul>
 
 
-<hr>
-<table *ngIf="true">
-  <thead>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Age</th>
-  </thead>
-  <tbody *ngFor="let person of people; let idx = index">
-    <td>{{idx+1}}</td>
-    <td>{{person.name}}</td>
-    <td>{{person.age}}</td>
-  </tbody>
-</table>
+<div style="display: none;">  <!-- temoprary hidden -->
+  <p>{{'michael' | exclamation : 14 : true}}</p>
 
-<!-- <button style="width: 200px;">Click me</button> -->
-<!-- <button [ngStyle]="
+  <p>{{'gil' | uppercase}}</p>
+  <p>{{1 | currency : 'ILS'}}</p>
+  <p>{{toDay | date : dateFormat }}</p>
+
+  <p>{{5.123456 | number: "3.3-4"}}</p>
+  <p>{{people | json}}</p>
+
+  <h1 [appRedGreen]="true"> hello world</h1>
+  <h2 [appRedGreen]="false"> hello world 2</h2>
+  <button [appRedGreen]="true">click</button>
+  <button>click</button>
+  <button [appDisappear]="2000">disappear</button>
+
+  <ul>
+    <li *ngFor="let name of names">{{print(name)}}</li>
+  </ul>
+
+  <ul>
+    <li *ngFor="let name of names">{{name}}</li>
+  </ul>
+
+  <ul>
+    <ng-container *ngFor="let person of people; let idx = index">
+      <li *ngIf="(idx + 1) % 2 === 0">
+        <div>
+          {{idx+1}} {{person.name}} is {{person.age}}
+        </div>
+      </li>
+    </ng-container>
+  </ul>
+
+
+  <hr>
+  <table *ngIf="true">
+    <thead>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Age</th>
+    </thead>
+    <tbody *ngFor="let person of people; let idx = index">
+      <td>{{idx+1}}</td>
+      <td>{{person.name}}</td>
+      <td>{{person.age}}</td>
+    </tbody>
+  </table>
+
+  <!-- <button style="width: 200px;">Click me</button> -->
+  <!-- <button [ngStyle]="
   {
     border: 'none', width: btnWidth, height: btnHeight, color: 'red', 'font-size' : '2rem'
   }">Click me</button> -->
 
-<!-- <button [ngClass]="{gil: true}">Test</button> -->
-<br>
-<!-- <app-button-class></app-button-class> -->
+  <!-- <button [ngClass]="{gil: true}">Test</button> -->
+  <br>
+  <!-- <app-button-class></app-button-class> -->
 
 
-<!-- <h1>Content Projection Demo</h1>
+  <!-- <h1>Content Projection Demo</h1>
 
 <app-card>
   <h1>Title: Hello, my name is Michael</h1>
@@ -74,3 +79,4 @@
   <button>Click</button>
 </app-card>"
  -->
+</div>
